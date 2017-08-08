@@ -11,7 +11,7 @@ This application implements the specified API for passbook webservices. It handl
 Requirements
 ============
 
-- Django 1.4
+- Django 1.8+
 
 Getting Started
 ===============
@@ -32,7 +32,7 @@ PASSBOOK_CERT_KEY = '/home/faramendi/my-site/key-nopass.pem'
 You should also import the urls in your site urls.
 ```
 from django_passbook import urls
-urlpatterns = patterns('',
+urlpatterns = [
     url(r'^api/', include('django_passbook.urls')),
 ```
 
