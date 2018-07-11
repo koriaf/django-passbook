@@ -16,6 +16,7 @@ class Pass(models.Model):
 
     class Meta:
         unique_together = (('pass_type_identifier', 'serial_number'),)
+        verbose_name = 'passes'
 
 
 class Registration(models.Model):
