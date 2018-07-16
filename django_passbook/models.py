@@ -24,7 +24,7 @@ class Registration(models.Model):
     Registration of a Pass on a device
     """
     device_library_identifier = models.CharField(max_length=64)
-    push_token = models.CharField(max_length=64)
+    push_token = models.CharField(max_length=255)
     pazz = models.ForeignKey(Pass)
 
     def __unicode__(self):
