@@ -1,4 +1,4 @@
-VERSION = ('0', '2', '1dev')
+VERSION = ('0', '2', '2dev')
 
 
 def get_version(*args, **kwargs):
