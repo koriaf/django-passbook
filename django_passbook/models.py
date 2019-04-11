@@ -25,7 +25,7 @@ class Registration(models.Model):
     """
     device_library_identifier = models.CharField(max_length=64)
     push_token = models.TextField()
-    pazz = models.ForeignKey(Pass)
+    pazz = models.ForeignKey(Pass, models.CASCADE)
 
     def __unicode__(self):
         return self.device_library_identifier
